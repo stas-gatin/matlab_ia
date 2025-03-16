@@ -34,3 +34,5 @@ YValidation = imdsValidation.Labels;
 
 accuracy = sum(YPred == YValidation) / numel(YValidation);
 disp("Precisión: " + accuracy);
+
+save('modelo_entrenado.mat', 'net');
